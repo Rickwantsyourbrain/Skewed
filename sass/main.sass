@@ -1,0 +1,385 @@
+@import "bourbon"
+@import "vars.sass"
+
+//Load Libs SASS
+@import "app/libs/animate/animate.sass"
+@import "app/libs/owl.carousel/dist/assets/owl.carousel.min"
+@import "app/libs/font-awesome/css/font-awesome.min"
+
+*::-webkit-input-placeholder
+	color: #fff
+	opacity: 1
+
+*:-moz-placeholder
+	color: #fff
+	opacity: 1
+
+*::-moz-placeholder
+	color: #fff
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #fff
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+//Custom Styles Here
+
+//First Section
+.about-us
+	&-wrap
+		margin-top: 170px
+		&-text
+			padding: 0 0 0 18px
+			h2
+			span
+				color: #b99424
+				font-family: "RobotoLight", sans-serif
+				font-size: em(18px)
+			p
+				margin-top: 40px
+				margin-bottom: 50px
+				color: #b1b1b1
+		&-image
+				img
+					max-width: 100%
+.button
+	display: inline-block
+	border: 2px solid #e2bd4d
+	border-radius: 3px
+	margin-bottom: 200px
+	transition: all 0.5s ease
+	&:hover
+		background-color: #e2bd4d
+		transition: all 0.5s ease
+	a
+		display: block
+		padding: 5px 40px
+		color: #e2bd4d
+		text-decoration: none
+		&:hover
+			color: #fff
+
+//Second Section
+
+.color-sect
+	background-color: #f7cc4b
+.title-sect
+	text-align: center
+	padding-top: 160px
+	padding-bottom: 60px
+	h2
+		color: #fff
+		span
+			font-family: "RobotoLight", sans-serif
+			font-size: em(20px)
+			color: #222
+.video
+	position: relative
+	&::before
+		position: absolute
+		content: ''
+		background-image: url(../img/skew-full-top-ccw.png)
+		background-size: cover
+		top: 0
+		width: 100%
+		height: 120px
+		left: 0
+	.video-wrap
+		padding-bottom: 230px
+		text-align: center
+		.responsive-vid
+			height: auto
+			width: 100%
+
+//Third section
+
+.team
+	position: relative
+	&::after
+		content: ''
+		background-image: url(..//img/skew-full-bottom-ccw.png)
+		height: 120px
+		width: 100%
+		background-size: cover
+		background-repeat: no-repeat
+		top: -115px
+		right: 0
+		position: absolute
+	.title-sect
+		h2
+			color: #111
+		span
+			color: #b99424
+	&-wrap
+		margin-top: 70px
+		.team-item
+			margin-bottom: 157px
+			text-align: center
+			h3
+				padding-top: 37px
+				color: #222
+			span
+				color: #b99424
+			&-img
+				img
+					border: 7px solid #b99424
+					max-width: 100%
+					border-radius: 10em
+					transition: all 0.5s ease
+					&:hover
+						transform: scale(1.1)
+						transition: all 0.5s ease
+
+//Fourth section
+
+.parallax
+	position: relative
+	text-align: center
+	background-repeat: no-repeat
+	background-size: cover
+	background-attachment: fixed
+	&::before
+		@extend .before
+	&::after
+		content: ''
+		background-image: url(..//img/skew-full-top-cw.png)
+		height: 120px
+		width: 100%
+		background-size: cover
+		background-repeat: no-repeat
+		top: 0
+		right: 0
+		position: absolute
+	.parallax-content
+		padding-top: 360px
+		padding-bottom: 150px
+		&-text
+			position: relative
+			h2
+			color: #fff
+			p
+				color: #b1b1b1
+				font-family: "RobotoRegular", sans-serif
+				margin-top: 50px
+				margin-bottom: 50px
+			span
+				font-family: "RobotoLight", sans-serif
+				color: #e2bd4d
+
+//Fifth section
+.principles
+	position: relative
+	&::before
+		content: ''
+		background-image: url(..//img/skew-full-bottom-cw.png)
+		height: 120px
+		width: 100%
+		background-size: cover
+		background-repeat: no-repeat
+		top: -313px
+		max-width: 100%
+		left: 0
+		position: absolute
+	&-wrap
+		margin-top: 200px
+
+//Sixth section
+.portfolio
+	position: relative
+	&::after
+		content: ''
+		background-image: url(..//img/skew-full-top-ccw.png)
+		height: 120px
+		width: 100%
+		background-size: cover
+		background-repeat: no-repeat
+		top: 0
+		right: 0
+		position: absolute
+	.title-sect
+		padding-top: 180px
+	.portfolio-content
+		position: relative
+		padding-bottom: 273px
+		.portfolio-item
+			padding: 0 10px
+			img
+				max-width: 100%
+			.overley
+				height: 100%
+				left: 0
+				opacity: 0
+				padding: 10%
+				position: absolute
+				text-align: center
+				top: 0
+				transition: all 0.5s ease 0s
+				width: 100%
+				&:hover
+					opacity: 1
+				a
+					position: absolute
+					text-decoration: none
+					border: 1px solid #a49993
+					border-radius: 10em
+					background: #a49993
+					display: block
+					top: 40%
+					color: #111
+					padding: 10px 16px
+					opacity: 0.5
+					outline: none
+					right: 40%
+					opacity: 0.7
+					font-size: em(19px)
+		.owl-nav
+			display: block
+			i
+				font-size: 40px
+			.owl-prev
+				position: absolute
+				top: 17%
+				left: -2%
+			.owl-next
+				position: absolute
+				top: 17%
+				right: -2%
+
+//Seventh Section
+
+.achievements
+	position: relative
+	&::after
+		content: ''
+		background-image: url(..//img/skew-full-bottom-ccw.png)
+		height: 120px
+		width: 100%
+		background-size: cover
+		background-repeat: no-repeat
+		top: -115px
+		right: 0
+		position: absolute
+	.title-sect
+		h2
+			color: #111
+		span
+			color: #b99424
+	.achievements-icons
+		margin-top: 70px
+		margin-bottom: 160px
+		.achievements-icon
+			text-align: center
+			img
+				margin: auto
+				height: 91px
+				width: 101px
+				display: block
+			.lines
+				font-family: "RobotoLight", sans-serif
+				font-size: em(40px)
+				display: block
+				color: $main-color
+			p
+				color: #666
+				margin-top: 0
+	.reviews
+		text-align: center
+		.reviews-carousel
+			padding-bottom: 91px
+			.reviews-item
+				p
+					font-family: "RobotoThin", sans-serif
+					font-size: em(25px)
+					span
+						color: #b99424
+				span
+					font-family: "RobotoRegular", sans-serif
+					font-size: em(16px)
+					color: #bbb
+			.owl-dots
+				display: inline-block
+				position: relative
+				bottom: -35px
+				.owl-dot
+					margin-right: 12px
+					background: #898989
+					border-radius: 10em
+					bottom: 0
+					display: inline-block
+					height: 12px
+					right: 0
+					width: 12px
+				.active
+					transform: scale(1.5)
+					background: $main-color
+					transition: all 0.5s ease
+
+//Eighth Section
+
+.subscribe
+	position: relative
+	&::before
+		content: ''
+		background-image: url(..//img/skew-full-top-cw.png)
+		height: 120px
+		width: 100%
+		background-size: cover
+		background-repeat: no-repeat
+		top: 0
+		right: 0
+		position: absolute
+	form
+		margin-bottom: 95px
+		.form-control
+			border-radius: 4px
+			width: 100%
+			background-color: #f7cc4b
+			border: 3px solid #fff
+			padding: 7px 18px
+		.button-page
+			width: 100%
+			padding: 9px 18px
+			color: #fff
+			background-color: #111
+			border: solid 1px #111
+			border-radius: 4px
+
+
+//Footer
+.main-foot
+	background-color: #111
+	text-align: center
+	.social-icons
+		padding-top: 67px
+		padding-bottom: 10px
+		.icon-foot
+			text-align: center
+			display: inline-block
+			margin-right: 10px
+			a
+				width: 40px
+				height: 40px
+				display: inline-block
+				border: 2px solid #fff
+				color: #fff
+				border-radius: 10em
+				.fa
+					font-size: 20px
+					margin-top: 8px
+	.foot-inf
+		padding-bottom: 50px
+		color: #bbb
+		font-family: "RobotoRegular", sans-serif
+		span
+			color: $main-color
+	
+
+//ALWAYS END
+@import "media"

@@ -1,0 +1,152 @@
+@import "bourbon"
+
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	/**/
+	
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	.slider-inner
+		h1
+			font-size: em(61px)
+	.about-us-wrap,
+	&.principles-wrap
+		margin-top: 70px
+		.about-us-wrap-text
+			padding: 0
+			text-align: center
+			.button
+				margin: 0
+		.about-us-wrap-image
+			img
+				display: none
+
+	.principles::before
+		top: -190px
+	.achievements 
+		.achievements-icons 
+			.achievements-icon
+				margin-bottom: 52px
+	.portfolio 
+		.portfolio-content 
+			.owl-nav 
+				.owl-prev
+					top: 14%
+				.owl-next
+					top: 14%
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	
+	/*Disable Animation on Mobile Devices*/
+	.animated
+		/*CSS transitions*/
+		-o-transition-property: none !important
+		-moz-transition-property: none !important
+		-ms-transition-property: none !important
+		-webkit-transition-property: none !important
+		transition-property: none !important
+		/*CSS transforms*/
+		-o-transform: none !important
+		-moz-transform: none !important
+		-ms-transform: none !important
+		-webkit-transform: none !important
+		transform: none !important
+		/*CSS animations*/
+		-webkit-animation: none !important
+		-moz-animation: none !important
+		-o-animation: none !important
+		-ms-animation: none !important
+		animation: none !important
+
+	.portfolio 
+		.portfolio-content 
+			.owl-nav
+				margin-top: 20px
+				text-align: center
+				.owl-prev
+					position: relative
+					display: inline-block
+					margin-right: 10px
+				.owl-next
+					position: relative
+					display: inline-block
+					margin-left: 10px
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	.container 
+		> h2
+			margin-bottom: 16px
+			font-size: em(47px)
+			line-height: 52px
+			padding-bottom: 23px
+	.slider-inner
+		h1
+			font-size: em(46px)
+	.about-us-wrap
+		margin-top: 70px
+		.about-us-wrap-text
+			h2
+				margin-bottom: 16px
+				line-height: 48px
+			padding: 0
+			text-align: center
+			.button
+				margin: 0
+		.about-us-wrap-image
+			img
+				display: none
+	.parallax-content-text
+		h2
+			font-size: em(60px)
+			line-height: 66px
+			margin-bottom: 16px
+	.achievements 
+		.reviews 
+			.reviews-carousel
+				.reviews-item
+					p
+						font-size: em(19px)
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	.main-head 
+		.top-pannel
+			.hidden-nav
+				ul
+					li
+			.toggle-mnu
+				top: -70px
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+
